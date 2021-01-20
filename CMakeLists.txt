@@ -57,6 +57,10 @@ target_link_libraries(tkDNN ${tkdnn_LIBS})
 #add_library(tkDNN_static STATIC ${tkdnn_SRC})
 #target_link_libraries(tkDNN_static ${tkdnn_LIBS})
 
+
+add_executable(deer_hde tests/simple/deer_hde.cpp)
+target_link_libraries(deer_hde tkDNN)
+
 # SMALL NETS
 add_executable(test_simple tests/simple/test_simple.cpp)
 target_link_libraries(test_simple tkDNN)
